@@ -1,0 +1,133 @@
+.hero__wrapper-main { 
+    background-color: var(--third-brand-color);
+}
+.hero__wrapper {
+    position: relative;
+}
+.hero {
+    padding: 25rem 0 20rem;
+    text-align: center;
+}
+.hero .title {
+    color: var(--first-brand-color);
+}
+
+
+.policy {
+    padding: 15rem 0;
+    text-align: center;
+}
+.policy__item:not(:last-child) {
+    margin-bottom: 5rem;
+}
+.policy__title {
+    text-transform: uppercase;
+    font-family: var(--title-font);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+.policy__block .text {
+    margin: 0 auto 3rem;
+    max-width: 40rem;
+}
+.policy__btn {
+    font-family: var(--title-font);
+    text-transform: lowercase;
+    color: var(--second-brand-color);
+    font-size: 2rem;
+    border-bottom: .2rem solid var(--second-brand-color);
+    transition: all 0.3s ease-in-out;
+}
+.policy__block {
+    position: relative;
+    padding: 4rem 1.5rem 3rem;
+    background-color: rgba(248, 243, 237, .95);
+}
+.policy__block::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 90%;
+    border: .1rem solid var(--third-brand-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+.contacts__wrapper {
+    padding: 2rem;
+}
+.contacts {
+    padding: 12rem 0;
+    text-align: center;
+    border: .1rem solid var(--third-brand-color);
+}
+.contacts .sub-title {
+    margin-bottom: 6rem;
+}
+.contacts__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contacts__svg {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    fill: var(--second-brand-color);
+}
+.contacts__item:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+
+.phrase__wrapper {
+    background-color: var(--second-brand-color);
+    padding: 2rem;
+}
+.phrase {
+    padding: 12rem 0;
+    text-align: center;
+    border: .1rem solid var(--first-brand-color);
+}
+.phrase .title {
+    color: var(--sub-text-color);
+    color: var(--first-brand-color);
+}
+
+@media screen and (min-width: 1440px)  {
+
+    .hero {
+        padding: 35rem 0 25rem;
+    }
+
+
+    .policy {
+        padding-bottom: 2rem;
+    }
+    .policy__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .policy__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .policy__item {
+        width: 48%;
+    }
+    .policy__btn:hover {
+        color: var(--third-brand-color);
+        border-bottom: .2rem solid var(--third-brand-color);
+    }
+   
+}
