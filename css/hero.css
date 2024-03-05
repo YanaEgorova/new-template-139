@@ -1,19 +1,25 @@
 .hero__wrapper-main { 
     background-color: var(--third-brand-color);
+
 }
 .hero__wrapper {
     position: relative;
-}
-.hero {
-    padding: 25rem 0 20rem;
-    text-align: center;
-    background-image: url('../img/bg.jpg');
+       background-image: url('../img/bg.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     position: relative;
 }
-.hero::before {
+.hero {
+    padding: 25rem 0 20rem;
+    text-align: center;
+    /* background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative; */
+}
+.hero__wrapper::before {
     position: absolute;
     display: block;
     content: "";
